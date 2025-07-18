@@ -1,0 +1,72 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: url("/img/discapacidad.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+main{
+    margin: 130px 400px;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(0, 0%, 96%, 0.463);
+    border: solid  1px;
+    border-radius: 5px;
+}
+h1{
+    width: max-content;
+}
+.fechas{
+    width: 270px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+.calculadora{
+    padding: 20px;
+    margin-top: 20px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.sesiones{
+    width: 270px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+.sesiones input{
+    width: 90px;
+    text-align: center;
+}
+#btn-caculador{
+    background-color: blue;
+    color: whitesmoke;
+    width: 100px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0;
+    letter-spacing: 2.5px;
+    font-size: 15px;
+}
+#btn-caculador:hover{
+    background-color: rgba(4, 4, 83, 0.729);
+}
+#totalDeSesiones{   
+    width: 350px;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+}
