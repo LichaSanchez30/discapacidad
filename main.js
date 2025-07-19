@@ -11,7 +11,13 @@ function caculador() {
             (1000 * 60 * 60 * 24);
         let semanas = Math.abs(diferenciaFechas) / 7;
         let sesionesTotales = Math.ceil(semanas) * sesionesSemanales.value
-        textoSesiones.innerHTML = `Son ${sesionesTotales} sesiones anuales`
+        
+        if(!isNaN(sesionesTotales) && sesionesSemanales.value > 0 ){
+            textoSesiones.innerHTML = `Son ${sesionesTotales} sesiones anuales`
+            
+        }else{
+            textoSesiones.innerHTML = `Por favor ingrese el periodo y la cantidad de sesiones semanales`
+        }
     })
     );
 }
