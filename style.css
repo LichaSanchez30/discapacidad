@@ -10,7 +10,7 @@ body{
     background-repeat: no-repeat;
 }
 main{
-    margin: 130px 400px;
+    margin: 15vw 20vw;
     height: 400px;
     width: 400px;
     display: flex;
@@ -69,4 +69,10 @@ h1{
     text-align: center;
     font-weight: 700;
     letter-spacing: 2.5px;
+}
+
+@media(max-width: 1900px){
+    main{
+        margin: 5vw 20vw;
+    }
 }
