@@ -10,8 +10,9 @@ body{
     background-repeat: no-repeat;
 }
 .contenedor{
-    margin: 0 auto;
-    height: 400px;
+    position: relative;
+    margin: 200px  auto;
+    height: max-content;
     width: 1150px;
     display: flex;
     flex-direction: column;
@@ -20,13 +21,18 @@ body{
     background-color: hsla(0, 0%, 96%, 0.463);
     border: solid  1px;
     border-radius: 5px;
+    padding-bottom: 20px;
 }
 
 h1{
     width: max-content;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .seleccionPrestacion{
+    display: flex;
+    flex-direction: column;
+    position: static;
+    top: 10px;
     font-size: 15px;
     font-weight: bold;
 }
@@ -133,11 +139,17 @@ h1{
     color: whitesmoke;
     display: none;
 }
+.total{
+    background-color:blue;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
 .km{
     width: 50px;
 }
 @media(max-width: 1900px){
     .contenedor{
-        margin: 70px auto;
+        margin: 50px auto;
     }
 }
