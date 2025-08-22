@@ -26,9 +26,11 @@ function calcularSesionesYTransporte() {
   let contenedorSesiones = document.getElementById("sesiones");
   let contadorKm = document.getElementById("transporte");
   let totalKm = document.getElementById("totalGeneral")
+  
   sesiones.addEventListener("change", () => {
     contenedorSesiones.style.display = "flex";
     contadorKm.style.display = "none";
+    totalKm.style.display = "none"
     caculador();
   });
 
