@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    padding-top: 100px
+}
+
+
+.nav-principal{
+    display: flex;
+    width: 1150px;
+    background-color: black;   
+    list-style: none;
+    padding-left: 10px;
+    padding-top: 5px;
+    margin: 0 auto;
+    
+}
+
+.nav-principal li{
+    padding: 4px;
+    background-color: black;
+    margin-right: 2px;
+}
+
+.nav-principal li:hover{
+    background-color: rgb(20, 20, 152);
+    border-radius: 5px 5px 0px 0px;
+}
+
+.nav-principal li a{
+    color: white;
+    text-decoration: none;
+}
+.socios-legales{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+}
+
+h1{
+    color: rgb(53, 30, 30);
+    margin: 20px 0px;
+}
+
+.consulta{
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+input{
+    border: none;
+    border-bottom: 1px solid;
+    background-color: rgba(173, 173, 173, 0.493);
+    border-radius: 3px;
+    padding: 5px;
+}
+
+input:focus{
+    outline: none;
+}
+#buscar{
+    border: none;
+    background-color: rgb(20, 20, 152);
+    padding: 5px;
+    font-size: 14px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#buscar:hover{
+    color: black;
+    background-color: rgba(20, 20, 152, 0.573);
+}
+
+.prestacioneslegalizadas{
+    border: solid 1px black;
+    width: 750px;
+    text-align: center;
+    border-collapse: collapse;
+    cursor: pointer;
+}
+ .prestacioneslegalizadas th, td {
+  border: 1px solid black; /* grosor y color del borde */
+}
+thead{
+    background-color: rgb(100, 98, 98);
+    color: whitesmoke;
+}
+
+th, td {
+  padding: 2px;            /* espacio interno */
+  text-align: center;        /* alineación del texto */
+
+}
+tbody tr:nth-child(odd) {
+  background-color: #f9f9f9; /* filas impares */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e9ecef; /* filas pares */
+}
+
+tbody tr:hover {
+  background-color: #d6e9ff;
+}
+
+#error{
+    margin-top: 20px;
+    color: white;
+    background-color: red;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: none;
+}
+
+
+/*Stylos calculadora*/
+
+
+.contenedor{
+    margin: 0 auto;
+    height: max-content;
+    width: 1150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(0, 0%, 96%, 0.463);
+    padding-bottom: 40px ;
+}
+
+h1{
+    width: max-content;
+    margin-bottom: 20px;
+}
+.seleccionPrestacion{
+    font-size: 15px;
+    font-weight: bold;
+    height: max-content;
+}
+.seleccionPrestacion input{
+    margin-right: 15px;
+}
+.fechas{
+    width: 270px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.sesiones{
+    padding: 20px;
+    margin-top: 20px;
+    width: 350px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+
+}
+.cantSesiones{
+    width: 270px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+.sesiones input{
+    width: 90px;
+    text-align: center;
+}
+#btn-caculador{
+    background-color: blue;
+    color: whitesmoke;
+    width: 100px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0;
+    letter-spacing: 2.5px;
+    font-size: 15px;
+}
+#btn-caculador:hover{
+    background-color: rgba(4, 4, 83, 0.729);
+}
+#totalDeSesiones{   
+    width: 350px;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+}
+
+.transporte{
+    margin-top: 20px;
+    display: none;
+    width: max-content;
+}
+.trasladoA{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.cant-dia{
+    width: 50px;
+}
+.prestDisca{
+    width: 250px;
+}
+.sumarDestino{
+    background-color: rgb(48, 148, 48);
+    color: white;
+    border: none;
+    height: 25px;
+    width: 25px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.sumarDestino:hover{
+    background-color: green;
+}
+.eliminarDestino{
+    background-color: red;
+    color: white;
+    border: none;
+    height: 25px;
+    width: 25px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.eliminarDestino:hover{
+    background-color: rgb(107, 9, 9);
+}
+
+#totalGeneral{
+    background-color: green;
+    width: max-content;
+    padding: 5px;
+    border-radius: 5px;
+    color: whitesmoke;
+    display: none;
+}
+.km{
+    width: 50px;
+}

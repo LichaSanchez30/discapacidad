@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Discapacidad Legales</title>
+</head>
+<body>  
+    <header>
+        <nav>
+            <ol class="nav-principal">
+                <li style="border-radius:5px 5px 0px 0px; background-color: white;"><a href="index.html" style=" color: black;">Legales</a></li>
+                <li><a href="calculadora.html">Calculadora</a></li>
+            </ol>
+        </nav>
+    </header>  
+    <div class="socios-legales">
+        <h1>Socios Legalizados</h1>
+        <div class="consulta">
+            <label for="">Socio:</label>
+            <input id="contrato" type="" placeholder="999999/9">
+            <button id="buscar">Buscar</button>
+        </div>
+        <table class="prestacioneslegalizadas" >
+            <thead>
+                <tr>
+                    <th>N° socio</th>
+                    <th>Codigo</th>
+                    <th>Prestación</th>
+                </tr>
+            </thead>
+            <tbody id="socios">
+        
+            </tbody>
+        </table>
+        <div id="error"></div>
+    </div>
+
+    <SCript src="socios.js"></SCript>
+    <script src="index.js"></script>
+</body>
+</html>

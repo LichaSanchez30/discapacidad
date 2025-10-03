@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discapacidad calculadora</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+        <nav>
+            <ol class="nav-principal">
+                <li><a href="index.html">Legales</a></li>
+                <li style="border-radius:5px 5px 0px 0px; background-color: white;"><a href="calculadora.html" style=" color: black;">Calculadora</a></li>
+                
+            </ol>
+        </nav>
+    </header> 
+    <main>
+      <div class="contenedor">
+        <h1>Calculadora de sesiones / km</h1>
+
+        <div class="seleccionPrestacion">
+           <h4>Elija una opción:</h4>
+          <label for="">kilomentros</label>
+          <input type="radio" name="opcion" id="traslado" />
+          <label for="">Sesiones</label>
+          <input type="radio" value="sesiones" name="opcion" id="rehabilitacion"/>
+        </div>
+
+        <div class="calculadora">
+          <div class="sesiones" id="sesiones">
+            <div class="fechas">
+              <label for="">Fecha desde:</label>
+              <input id="fechaDesde" type="date" placeholder="Ej: 01/01/2025" />
+            </div>
+            <div class="fechas">
+              <label for="">Fecha hasta:</label>
+              <input id="fechaHasta" type="date" placeholder="Ej: 31/12/2025" />
+            </div>
+            <div class="cantSesiones">
+              <label for="">Cant. sesiones:</label>
+              <input type="number" name="" id="cantsesiones" placeholder="Ej: 2"/>
+            </div>
+            <button id="btn-caculador">Calcular</button>
+            <p id="totalDeSesiones">
+                 Por favor ingrese el periodo y la cantidad de sesiones semanales
+            </p>
+          </div>
+            <div class="transporte" id="transporte">
+            </div>
+            <p id = "totalGeneral"></p>
+
+          </div>
+        
+        
+        
+      </div>
+    </main>
+    <script src="nomenclador.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
