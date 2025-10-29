@@ -2508,5 +2508,6 @@ var baseSocios = [
 {contrato: '335969/1',codigo:45050128,prestacion: 'Hogar Permanente Con Centro de Dia Categoría A'},
 {contrato: '1340835/1',codigo:45050128,prestacion: 'Hogar Permanente Con Centro de Dia Categoría A'},
 {contrato: '513871/1',codigo:45050128,prestacion: 'Hogar Permanente Con Centro de Dia Categoría A'},
+{contrato: '8005758/1',codigo:45050128,prestacion: 'Hogar Permanente Con Centro de Dia Categoría A'},
 
 ];
