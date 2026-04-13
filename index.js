@@ -2,6 +2,7 @@
     const btn = document.getElementById('buscar');
     const container = document.getElementById('socios');
     const contErr = document.getElementById('error');
+    const socioN = document.getElementById('socio-numero')
     
 // btn.addEventListener('click', () => {
 //     const prestacionSocio = baseSocios.filter(element => element.contrato == contratoInput.value);
@@ -53,9 +54,10 @@
 
 
 
-    btn.addEventListener('click', () => {
+  btn.addEventListener('click', () => {
   const valor = contratoInput.value.trim();
   const prestacionSocio = baseSocios.filter(s => s.contrato == valor);
+  socioN.style.display = "block"
 
   if (valor === "") {
     container.innerHTML = "";
@@ -64,11 +66,14 @@
   } else if (prestacionSocio.length === 0) {
     container.innerHTML = "";
     contErr.style.display = "block";
+    socioN.innerHTML = `<h4>Socio N°: ${valor}</h4>`
     contErr.innerHTML = `Socio ${valor} sin prestaciones legalizadas.`;
   } else {
+
     contErr.style.display = "none";
+    socioN.innerHTML = `<h4>Socio N°: ${prestacionSocio[0].contrato}</h4>`
     container.innerHTML = prestacionSocio.map(s =>
-      `<tr><td>${s.contrato}</td><td>${s.codigo}</td><td>${s.prestacion}</td></tr>`
+      `<tr><td>${s.codigo}</td><td>${s.prestacion}</td></tr>`
     ).join("");
   }
 });
