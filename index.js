@@ -57,8 +57,8 @@
   btn.addEventListener('click', () => {
   const valor = contratoInput.value.trim();
   const prestacionSocio = baseSocios.filter(s => s.contrato == valor);
-  socioN.style.display = "block"
-
+  socioN.style.display = "block";
+  
   if (valor === "") {
     container.innerHTML = "";
     contErr.style.display = "block";
@@ -70,6 +70,7 @@
                         <h4> Socio N°: - </h4>`
     contErr.innerHTML = `Socio ${valor} sin prestaciones legalizadas.`;
   } else {
+    contratoInput.value = ""
     contErr.style.display = "none";
     socioN.innerHTML = `<h4>Nombre y Apellido: ${prestacionSocio[0].nombre}</h4>
                         <h4> Socio N°: ${prestacionSocio[0].contrato}</h4>`
