@@ -66,12 +66,13 @@
   } else if (prestacionSocio.length === 0) {
     container.innerHTML = "";
     contErr.style.display = "block";
-    socioN.innerHTML = `<h4>Socio N°: ${valor}</h4>`
+    socioN.innerHTML = `<h4>Nombre y Apellido: - </h4>
+                        <h4> Socio N°: - </h4>`
     contErr.innerHTML = `Socio ${valor} sin prestaciones legalizadas.`;
   } else {
-
     contErr.style.display = "none";
-    socioN.innerHTML = `<h4>Socio N°: ${prestacionSocio[0].contrato}</h4>`
+    socioN.innerHTML = `<h4>Nombre y Apellido: ${prestacionSocio[0].nombre}</h4>
+                        <h4> Socio N°: ${prestacionSocio[0].contrato}</h4>`
     container.innerHTML = prestacionSocio.map(s =>
       `<tr><td>${s.codigo}</td><td>${s.prestacion}</td></tr>`
     ).join("");
